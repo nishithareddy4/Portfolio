@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Playfair+Display:ital@1&family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            background-color: black;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color:#267dc3;
+            width: 100%;
+        }
+
+        .navbar-left {
+            padding-left: 80px;
+
+        }
+
+        .navbar-left img {
+            height: 100px;
+            width: 80px;
+        }
+
+        .navbar-right {
+            padding-right: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+
+        }
+
+        .element {
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 80vh;
+
+
+
+        }
+
+        .home-left {
+            width: 65vw;
+            color: aliceblue;
+            font-family: Arial;
+            text-align: center;
+            padding-left: 20px;
+            border-style: solid;
+            border-radius: 15px;
+            border-color: hwb(227.08deg 12.25% 26.51%);
+
+
+
+        }
+
+        .home-right {
+            width: 35vw;
+            align-items: right;
+            padding-left: 100px;
+            border-style: dashed;
+
+        }
+
+        .home-h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+
+        }
+
+        .home-p {
+            font-family: 'Encode Sans', sans-serif;
+            font-size: 20px;
+
+        }
+
+        .home-right img {
+            height: 65%;
+            width: 65%;
+
+        }
+
+        .services {
+            color: whitesmoke;
+            padding: 50px;
+            text-align: center;
+
+
+        }
+
+        .serh1 {
+            font-family: ubuntu;
+            color:  rgb(49 153 206);
+            letter-spacing: 3px;
+            font-size: 40px;
+            font-style: italic;
+
+        }
+
+        .services-sub-cont {
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        .services-card {
+            border: 2px solid hwb(227.08deg 12.25% 26.51%);
+            margin: 20px;
+            padding: 20px;
+            width: 400px;
+
+        }
+
+        .sc-h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            color: rgb(50, 215, 215);
+        }
+
+        .sc-p {
+            font-family: 'Encode Sans', sans-serif;
+            font-size: 20px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact-info {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            color: whitesmoke;
+        }
+
+        .social-icons img {
+            height: 50px;
+            padding: 20px;
+
+
+
+        }
+
+        .services-card img {
+            height: 50px;
+        }
+
+        h3 {
+            color: white;
+        }
+    </style>
+    <title>My Portfolio</title>
+    <link data-default-icon="https://cdn-icons-png.flaticon.com/128/3097/3097059.png" rel="icon" size="300x300"
+        href="https://cdn-icons-png.flaticon.com/128/3097/3097059.png" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="https://cdn-icons-png.flaticon.com/128/13041/13041353.png" alt="my profile" />
+        </div>
+        <div class="navbar-right">
+            <a class="element" href="#home">Home</a>
+            <a class="element" href="#About">About</a>
+            <a class="element" href="#services">Services</a>
+            <a class="element" href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="home" id="home">
+        <div class="home-left">
+            <h1 class="home-h1"> Nishitha Reddy</h1>
+            <p class="home-p">I'm Veera Nishitha Reddy currently pursuing B.Tech at Mohan Babu University in Tirupathi
+                and has a keen interest in full-stack web development. This dynamic field encompasses both front-end and
+                back-end technologies, allowing me to create interactive and functional websites. With the foundation of
+                my ongoing education, l'm poised to delve into the diverse realms of programming languages, frameworks,
+                and database management systems. My academic pursuits, coupled with a passion for full-stack
+                development, position me to navigate the ever-evolving landscape of web technologies and contribute to
+                innovative digital solutions in the future. </p>
+        </div>
+        <div class="home-right">
+            <img src="data:image/png;base64,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"
+                alt="my logo" />
+
+
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <hi class="serh1">SERVICES WE OFFER</hi>
+        <div class="services-sub-cont">
+            <div class="services-card">
+                <h1 class="sc-h1">Web designing</h1>
+                <p class="sc-p">1)Frontend Development
+                    2)Backend Development
+                    3)Tools & Technologies
+                    I am passionate about creating web solutions that make an impact. If you have a project or idea that
+                    needs a skilled developer, let's connect and turn your vision into reality. Thank you for visiting,
+                    and I look forward to the opportunity to work together.
+
+                </p>
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">Photo Shop</h1>
+                <p class="sc-p">My interest in photography is a captivating form of visual expression.My passion for
+                    photo shoots not only enables personal creativity but also offers opportunities to share
+                    perspectives and connect with others through the lens.Thank you for visiting, and I look forward to
+                    the opportunity to work together.
+
+                </p>
+
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">Video Editing</h1>
+                <p class="sc-p">I believe in the power of visual storytelling, and I bring a unique blend of creativity
+                    and technical expertise to every project. Throughout my career, I've had the privilege of working on
+                    diverse projects, ranging from corporate videos to cinematic short films. I look forward to the
+                    opportunity to work together and turn your ideas into reality.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <hi class="serh1">TESTIMONIALS</hi>
+        <div class="services-sub-cont">
+            <div class="services-card">
+                <h1 class="sc-h1">Google</h1>
+                <img src="data:image/png;base64,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"
+                    class="test-logo" />
+
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">Facebook</h1>
+                <img src="data:image/png;base64,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"
+                    class="test-logo" />
+
+
+            </div>
+            <div class="services-card">
+                <h1 class="sc-h1">instagram</h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Z1nn-1E-mQYrUtEk1peuckUTKTnrat3UQ&usqp=CAU"
+                    class="test-logo" />
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="contact" id="contact">
+        <h1 class="serh1">CONTACT US</h1>
+        <div class="contact-info">
+            <p>Nishitha Reddy</p>
+            <p>nishithareddy274@gmail.com</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/nishithareddy8?igsh=MTRzYWtmanh3aWxqOA==">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Z1nn-1E-mQYrUtEk1peuckUTKTnrat3UQ&usqp=CAU" class="icon"/>
+            </a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj1g39T1ex027T9zpeMUAjqCz69qDmXnMFqQ&usqp=CAU" class="icon"/>
+                <a href="https://www.linkedin.com/in/nishitha-reddy-5a9a96268">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEUAe7X///8AcbDi6/MAd7N9rM4Ac7G70eStyN/I2ukAebQAdbI5j79Unsjo8vjM4u7Y6fIfiLy00uWew9sHfrZvqs52qc3T5O+ly+FvpMpopcuMudcUg7qny+Hg7/ZDlMKAtNTw9/u92eljoMiTuNWBttWUwNukw9s5k8K61+jZwmoZAAAEoUlEQVR4nO2dbVvbIBSGgTJUSGjStNtsrX1x69b//weXtNMaDVR30YOePfcXP5RcF7e8JhxAyEeqpqynggV12VRPXuLv30mhnM6ds2Rop4pJz9CXxubOVWKsKf3JcCz4FN8JLcaPhmPFrQCPWDU+GnrBU7BVFP5gWHKsokd02RlOTO58XBA1aQ0LrnW0wxZSVCp3Li6KqkTjcmfiorhGMO5nOnQp6tx5uDC1YDLZBgAAAAAAAAAAAAAAAADAf43VRrUYx3SJ1Ro9b8YjX00WhWK4BmnN3fIprkrez/gFHLmd7FGteMU72GO0UY81p3gAa6tXgqwUrXtdgh1zNhEBZjEoKDd3XLqb6bCgZBNdZb6HDCWPQrR2EzRsWBSifggKSs+iO3051verae7cpUBtI4Ylh4aoRhHDrxyGxKjhFw6G5lvEkMW0xiwjhizijd06Yqg5GNoiLLhlMeILNfTqxKgZtpOaeUiQx5RGRAqRSRG2hRhoiXserbDDDdbTikM/+oiZDQhOORkKU25eVlFuG+DctPem7+d82uATRuzuj3qb7Vxx6UX7OHW3ur19KDRTvwNaa2uZNUAAwEfgsLQdoN+pukjKF6vG1radlnPmiOs6MEKlPub6JszDc0X3I5JycVK01hlRr+Y/d8ur9perSbOYlYU1uc7pePu3NnMVSXn9OAlqTcrd2L9K4G8WqzzxAWkNtSqWm2Aiv5tmCBBIaWhNMbzYemJfk894Uxrq5oxfR0N98EpCQ32uAI/4grY5JjO0JvzR7gUz0pqazNBMIj+/YEGpmMpQlW8XlPInoWIywzfX0QMlXVtMZbh6l6CUNdnAmMjw1zta4YExWZBnKsPNOw3lmqqeJjKMRQMMs6F63Uhk+A/siPrTfIYbovXXfIZyTTNBzWhY0VTTjIZyRVKIOQ1p+pqchhXJkJjTkGbqltVwRtEQsxpOKKppVkOS8SKrIUlYWV7D3wQNMa8hxStUckO/XTZNs9zfvyXxkqAhpjWs1nW3R7NbdVJ3X89/P90ShM6lNPRz87zrcKo8V5AUwYEJDV8flK71uc83n6qWDh6UrmJB1pJkR0cyQz8YCGfPfEcliCRPZjgb7vhjUdaSZM9KKsP7UIsy0c9wBHtWUhkuQmO3ji5oEAz5qQzDr3rTzb/8Yz6c4SY8sKnYrpzdpzEchwe2yCZVKb9/GsPInmEX2El97rkPZngdMfwSeY5gQ8DlDXXMkGDqndlwzN7wG/taSnDhSGbDEQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMKwj7kZBfG3z7druV/hlKMf4V129taHn7sh2CYbO0e4vx8tdo5wbBuhjTzH8Px+AAAAAAAAAAAAAAAAAAAAAAAA4ESdOwMXphYl46vfRXcqsWiy3LlLhmsEwVGLOVGVoDjlPB+2kILiZN58mH1rKBn3Nd3p562hF1zrqRX+YDh8DQMDrOouPekMB67S4IAWh1tdDobSl+yK0ZrSy5OhlJNCOT4FqZ0q9n/NxFP0bdWUXOaoddmcbjr5A5XhWJeQSJXvAAAAAElFTkSuQmCC" class="icon"/>
+                      </a>
+                      <h3>&copy; 2004-2024</h3>
+
+    </div>
+    
+
+
+
+</body>
+
+</html>
